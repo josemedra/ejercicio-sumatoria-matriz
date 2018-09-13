@@ -1,0 +1,27 @@
+#include <iostream>
+void recorrermatriz(void);
+int main()
+{
+    recorrermatriz();
+    return 0;
+}
+
+void recorrermatriz(void)
+{
+
+    int matrizx[3][3]={{1,2,3},{4,5,6},{7,8,9}};
+    int n=3;
+    int suma;
+    for(int i=0;i<n;++i)
+    {
+        for(int j=0;j<3;++j)
+        {
+            std::cout<<"matrizx["<<i<<"]["<<j<<"]:"<<matrizx[i][j]<<std::endl;
+        }
+
+}
+    
+
+    suma =((matrizx[0][0]))+(matrizx[1][1])+(matrizx[2][2]);
+    std::cout<<"la sumatoria de la primera  diagonal es:"<<suma<<std::endl;
+}
